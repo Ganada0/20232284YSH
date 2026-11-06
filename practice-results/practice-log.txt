@@ -1,0 +1,48 @@
+Initialized empty Git repository in D:/YSH/iTshirt/.git/
+[main (root-commit) 1f85a1d] 사이트 설명 추가
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.txt
+[main 7d250b2] 설명 업데이트
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+warning: in the working copy of 'README.txt', LF will be replaced by CRLF the next time Git touches it
+[main 6cba82b] 개발자 목록 추가
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+warning: in the working copy of 'feature-list.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tshirt-list.md', LF will be replaced by CRLF the next time Git touches it
+[main 1f9f43c] 티셔츠, 기능 리스트 추가
+ 2 files changed, 5 insertions(+)
+ create mode 100644 feature-list.md
+ create mode 100644 tshirt-list.md
+Initialized empty Git repository in D:/YSH/local-remotes/iTshirt.git/
+To D:\YSH/local-remotes/iTshirt.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+Initialized empty Git repository in D:/YSH/hello-git/.git/
+warning: in the working copy of 'hello.txt', LF will be replaced by CRLF the next time Git touches it
+[main (root-commit) e0fe98a] 첫 번째 커밋
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello.txt
+warning: in the working copy of 'hello.txt', LF will be replaced by CRLF the next time Git touches it
+[main bb8d9f2] 두 번째 커밋
+ 1 file changed, 1 insertion(+)
+HEAD is now at e0fe98a 첫 번째 커밋
+Previous HEAD position was e0fe98a 첫 번째 커밋
+Switched to branch 'main'
+Initialized empty Git repository in D:/YSH/local-remotes/hello-git.git/
+To D:\YSH/local-remotes/hello-git.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+Cloning into 'D:\YSH/hello-git-copy'...
+done.
+warning: in the working copy of 'hello.txt', LF will be replaced by CRLF the next time Git touches it
+[main 218aff2] 복제한 저장소에서 내용 추가
+ 1 file changed, 1 insertion(+)
+To D:\YSH/local-remotes/hello-git.git
+   bb8d9f2..218aff2  main -> main
+From D:\YSH/local-remotes/hello-git
+   bb8d9f2..218aff2  main       -> origin/main
+Updating bb8d9f2..218aff2
+Fast-forward
+ hello.txt | 1 +
+ 1 file changed, 1 insertion(+)
+Verified: clean working trees, repository integrity, push/clone/pull, historical checkout.

@@ -1,0 +1,42 @@
+Git·GitHub 개정판 실습 결과물
+
+이 저장소의 기존 main 실습 파일과 이력은 유지했습니다.
+README.txt, feature-list.md, tshirt-list.md가 기본 실습 결과입니다.
+기존 feature/cart와 feature/detail-page는 병합하지 않았습니다.
+
+추가 결과물
+- iTshirt.bundle: 별도로 재현한 공식 예제 초기 4개 커밋 전체.
+  최종 Git tree가 저자 저장소의 b94c464 커밋과 일치함을 검증했습니다.
+  기존 본인 저장소 README의 '오픈 소스' 표기는 그대로 유지했습니다.
+- hello-git.bundle: 보충 실습 커밋 이력. 책 예문 그대로가 아닙니다.
+  이전 버전 조회, 로컬 원격 push, clone, 복제본 수정, pull을 수행했습니다.
+- setup-practice.ps1: 위 실습 재현 스크립트.
+- practice-log.txt: 실행 기록.
+
+다른 PC에서 이력 복원 (이 폴더에서 실행, 대상 폴더가 없어야 함)
+  git clone ./iTshirt.bundle ./restored-iTshirt
+  git clone ./hello-git.bundle ./restored-hello-git
+bundle은 GitHub 계정 인증 없이 로컬에서 복원할 수 있는 Git 이력 파일입니다.
+복원된 저장소의 origin은 bundle 파일을 가리킵니다.
+
+전체 실습 재현
+setup-practice.ps1을 빈 폴더에 복사한 후 PowerShell에서 실행하세요.
+Git 설치와 user.name/user.email 설정이 필요합니다.
+스크립트가 위치한 폴더 아래에 연습 저장소와 로컬 bare 저장소를 만듭니다.
+이미 대상 실습 폴더가 있으면 덮어쓰지 않고 중단합니다.
+
+검증 결과
+- 원본 연습 저장소 3개: git fsck 통과, 작업 트리 깨끗함.
+- hello-git 원본과 복제본: 최종 HEAD 일치.
+- 이 GitHub 저장소: clone 및 pull --ff-only 정상.
+- 배포용 bundle 2개: git bundle verify 통과.
+
+범위 한계
+요청은 개정판 90페이지까지이나 공개 자료로 정확한 마지막 실습을
+확인하지 못했습니다. 따라서 90페이지 전체 완료로 표기하지 않습니다.
+로컬 원격 실습과 GitHub 원격 실습은 서로 구분해야 합니다.
+
+출처
+https://www.hanbit.co.kr/books/B4797999461?code=B4797999461
+https://github.com/Cat-Hanbit/README
+https://github.com/Cat-Hanbit/iTshirt/commit/b94c46460a81ad12603d316fb4b6bdac680a67ce
